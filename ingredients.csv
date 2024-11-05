@@ -1,34 +1,32 @@
-Ingredient Name,Calories,Unit,Defining Health Tag,Meal Category
-Pasta,220,Cal,High Carb,Base
-Bread,265,Cal,High Carb,Base
-Oats,150,Cal,High Fiber,Base
-Brown Rice,215,Cal,High Fiber,Base
-White Rice,205,Cal,High Carb,Base
-Waffles,200,Cal,High Carb,Base
-Grits,110,Cal,High Carb,Base
+Ingredient Name,Calories,Fat,Carbs,Protein,Meal Category
+Pasta,220,1.3,43.2,8.1,Base
+Bread,265,3.2,49,9,Base
+Oats,150,3,27,5,Base
+Brown Rice,215,1.8,44.8,5,Base
+White Rice,205,0.4,44.5,4.3,Base
+Waffles,200,10,25,5,Base
+Grits,110,0.6,24,2,Base
 
-Chicken,165,Cal,High Protein,Main
-Ham,120,Cal,High Protein,Main
-Turkey,135,Cal,Low Fat,Main
-Salmon,206,Cal,High Protein,Main
-Beans,110,Cal,High Fiber,Main
-Steak,250,Cal,High Protein,Main
-Pork,242,Cal,High Protein,Main
-Eggs,78,Cal,High Protein,Main
+Chicken,165,3.6,0,31,Main
+Ham,120,4,2,19,Main
+Turkey,135,3,0,30,Main
+Salmon,206,12,0,22,Main
+Beans,110,0.5,20.4,7.6,Main
+Steak,250,15,0,26,Main
+Pork,242,14,0,27,Main
+Eggs,78,5,0.6,6,Main
 
-Chips,152,Cal,High Fat,Side
-French Fries,365,Cal,High Fat,Side
-Sweet Potato,103,Cal,High Fiber,Side
-Carrots,25,Cal,Low Calorie,Side
-Peppers,30,Cal,Low Calorie,Side
-Broccoli,55,Cal,High Fiber,Side
-Onion,40,Cal,Low Calorie,Side
-Tomato,18,Cal,Low Calorie,Side
-Lettuce,5,Cal,Low Calorie,Side
-Avocado,240,Cal,High Fat,Side
-Banana,105,Cal,High Carb,Side
-Apple,95,Cal,High Fiber,Side
-Strawberries,32,Cal,Low Calorie,Side
-Blueberries,57,Cal,Low Calorie,Side
-
-
+Chips,152,10,15,2,Side
+French Fries,365,17,48,4,Side
+Sweet Potato,103,0.2,24,2.3,Side
+Carrots,25,0.1,6,0.6,Side
+Peppers,30,0.2,7,1,Side
+Broccoli,55,0.6,11,3.7,Side
+Onion,40,0.1,10,1,Side
+Tomato,18,0.3,5,1,Side
+Lettuce,5,0,1,0.3,Side
+Avocado,240,22,13,3,Side
+Banana,105,0.4,27,1.3,Side
+Apple,95,0.3,25,0.5,Side
+Strawberries,32,0.3,7.7,0.7,Side
+Blueberries,57,0.3,14,0.7,Side
