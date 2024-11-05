@@ -1,0 +1,28 @@
+Ingredient Name,Calories,Unit,Food Category,Defining Health Tag,Meal Category
+Pasta,220,Cal,Carbohydrate,High Carb,Base
+Bread,265,Cal,Carbohydrate,High Carb,Base
+Oats,150,Cal,Carbohydrate,High Fiber,Base
+Brown Rice,215,Cal,Carbohydrate,High Fiber,Base
+White Rice,205,Cal,Carbohydrate,High Carb,Base
+
+Chicken Breast,165,Cal,Protein,High Protein,Main
+Ham,120,Cal,Protein,High Protein,Main
+Turkey,135,Cal,Protein,Low Fat,Main
+Salmon,206,Cal,Protein,High Protein,Main
+Beans,110,Cal,Protein,High Fiber,Main
+Steak,250,Cal,Protein,High Protein,Main
+Pork,242,Cal,Protein,High Protein,Main
+
+Chips,152,Cal,Snack,High Fat,Side
+French Fries,365,Cal,Snack,High Fat,Side
+Sweet Potato,103,Cal,Carbohydrate,High Fiber,Side
+Carrots,25,Cal,Vegetable,Low Calorie,Side
+Peppers,30,Cal,Vegetable,Low Calorie,Side
+Broccoli,55,Cal,Vegetable,High Fiber,Side
+Onion,40,Cal,Vegetable,Low Calorie,Side
+Tomato,18,Cal,Vegetable,Low Calorie,Side
+Avocado,240,Cal,Fruit,High Fat,Side
+Banana,105,Cal,Fruit,High Carb,Side
+Apple,95,Cal,Fruit,High Fiber,Side
+
+
