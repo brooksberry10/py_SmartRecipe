@@ -1,6 +1,6 @@
 {
     "dietary_preferences": {
-        "restrictions/preferences": ["vegetarian", "pescatarian", "gluten-free", "veg-heavy", "fruit-heavy", "balanced"]
+        "restrictions/preferences": ["vegetarian", "pescatarian", "gluten-free", "veg-focused", "fruit-focused", "meat-focused","balanced"]
     },
     "nutritional_goals": {
         "daily_calorie_goals": [1500, 2000, 2500],
