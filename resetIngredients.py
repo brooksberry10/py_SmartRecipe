@@ -6,11 +6,11 @@ def reset_ingredient_availability(filename):
         with open(filename, mode='r', newline='') as infile:
             reader = csv.reader(infile)
             header = next(reader)  # Read header row
-            rows = [row for row in reader if len(row) == 7]  # Only keep rows with 7 columns
+            rows = [row for row in reader]  # Read all rows, no filtering needed
 
         # Reset availability to 0 for all ingredients
         for row in rows:
-            row[6] = '0'  # Reset availability to 0
+            row[1] = '0'  # Reset availability to 0
 
         # Save the updated data back to the CSV
         with open(filename, mode='w', newline='') as outfile:
