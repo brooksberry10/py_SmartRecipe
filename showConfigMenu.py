@@ -54,22 +54,4 @@ def reset_preferences(preferences):
     print("All dietary preferences have been reset to not selected.")
 
 
-# Example usage if running this script standalone (optional)
-if __name__ == "__main__":
-    preferences = load_user_preferences('userConfigTemplate.json')
 
-    if preferences is not None:
-        while True:
-            updated_preferences = select_preferences(preferences)
-            save_user_preferences('userConfigTemplate.json', updated_preferences)
-
-            # Prompt user to reset preferences
-            reset_choice = input("Do you want to reset your dietary preferences? (y/n): ")
-            if reset_choice.lower() == 'y':
-                reset_preferences(preferences)
-                save_user_preferences('userConfigTemplate.json', preferences)
-
-            # Ask if the user wants to select preferences again
-            another_selection = input("Do you want to select your dietary preferences again? (y/n): ")
-            if another_selection.lower() != 'y':
-                break
