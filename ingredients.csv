@@ -1,32 +1,88 @@
-Ingredient Name,Calories,Fat,Carbs,Protein,Meal Category, Available
-Pasta,220,1.3,43.2,8.1,Base,0
-Bread,265,3.2,49,9,Base,0
-Oats,150,3,27,5,Base,0
-Brown Rice,215,1.8,44.8,5,Base,0
-White Rice,205,0.4,44.5,4.3,Base,0
-Waffles,200,10,25,5,Base,0
-Grits,110,0.6,24,2,Base,0
-
-Chicken,165,3.6,0,31,Main,0
-Ham,120,4,2,19,Main,0
-Turkey,135,3,0,30,Main,0
-Salmon,206,12,0,22,Main,0
-Beans,110,0.5,20.4,7.6,Main,0
-Steak,250,15,0,26,Main,0
-Pork,242,14,0,27,Main,0
-Eggs,78,5,0.6,6,Main,0
-
-Chips,152,10,15,2,Side,0
-French Fries,365,17,48,4,Side,0
-Sweet Potato,103,0.2,24,2.3,Side,0
-Carrots,25,0.1,6,0.6,Side,0
-Peppers,30,0.2,7,1,Side,0
-Broccoli,55,0.6,11,3.7,Side,0
-Onion,40,0.1,10,1,Side,0
-Tomato,18,0.3,5,1,Side,0
-Lettuce,5,0,1,0.3,Side,0
-Avocado,240,22,13,3,Side,0
-Banana,105,0.4,27,1.3,Side,0
-Apple,95,0.3,25,0.5,Side,0
-Strawberries,32,0.3,7.7,0.7,Side,0
-Blueberries,57,0.3,14,0.7,Side,0
+Ingredient Name,Available
+banana,0
+zucchini,0
+coconut milk,0
+marinara sauce,0
+parmesan cheese,0
+oil,0
+Cod,0
+egg,0
+Pizza dough,0
+basil,0
+shrimp,0
+Almond butter,0
+carrots,0
+breadcrumbs,0
+milk,0
+Shrimp,0
+mozzarella,0
+garlic,0
+bell peppers,0
+Lentils,0
+spinach,0
+Cauliflower,0
+vinaigrette,0
+rosemary,0
+hamburger bun,0
+saffron,0
+mixed vegetables,0
+Whole wheat tortilla,0
+almond milk,0
+olive oil,0
+corn tortillas,0
+sugar,0
+feta cheese,0
+Chickpeas,0
+balsamic vinegar,0
+Ground turkey,0
+asparagus,0
+chocolate chips,0
+Ground beef,0
+butter,0
+Cottage cheese,0
+celery,0
+corn,0
+Broccoli,0
+mussels,0
+Portobello mushrooms,0
+Kidney beans,0
+Salmon,0
+cheese,0
+onions,0
+lemon,0
+peas,0
+tofu,0
+Whey protein,0
+lettuce,0
+potatoes,0
+curry powder,0
+Canned tuna,0
+black beans,0
+mushrooms,0
+spices,0
+Eggplant,0
+tilapia,0
+Chicken breast,0
+mixed greens,0
+Crab meat,0
+salsa,0
+flour,0
+herbs,0
+soy sauce,0
+tomato sauce,0
+tomatoes,0
+White fish,0
+Beef,0
+Arborio rice,0
+cabbage,0
+quinoa,0
+sea salt,0
+Rice,0
+Pork tenderloin,0
+avocado,0
+cherry tomatoes,0
+Eggs,0
+vegetable broth,0
+parsley,0
+mayonnaise,0
+Pasta,0
