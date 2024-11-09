@@ -69,10 +69,14 @@ def main():
     filtered_recipes = filter_recipes(preferences, recipes)  #filter recipes based on user preferences
     display_filtered_recipes(filtered_recipes)  # Display filtered recipes
 
-    #make weekly meal plan
+
+
+
+# TO DO #########################################################################################################
+    #menu for nutritional goals
+    #make weekly meal plan, accounting for nutritional goals, and using only filtered recipes
+    #shopping lsit based on recipes used in meal plan and ingredients in inventory
     #pie chart
-
-
 
 
 

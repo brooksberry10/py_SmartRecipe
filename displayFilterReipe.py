@@ -37,5 +37,6 @@ def display_filtered_recipes(filtered_recipes):
         print("\nFiltered Recipes:")
         for recipe in filtered_recipes:
             print(f"- {recipe['Name']} (Calories: {recipe['Total Calories']}, Tags: {recipe['Dietary Tags']})")
+            print(f"        Ingredients: {recipe['Ingredients']}\n")
     else:
         print("\nNo recipes found that match your preferences.")

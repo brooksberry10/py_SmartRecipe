@@ -7,7 +7,7 @@
             },
             {
                 "name": "pescatarian",
-                "selected": 1
+                "selected": 0
             },
             {
                 "name": "gluten-free",
@@ -39,11 +39,11 @@
             },
             {
                 "name": "dairy free",
-                "selected": 0
+                "selected": 1
             },
             {
                 "name": "Heart Healthy",
-                "selected": 0
+                "selected": 1
             },
             {
                 "name": "IBD diet",
