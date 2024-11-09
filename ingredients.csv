@@ -1,8 +1,8 @@
 Ingredient Name,Available
-banana,0
-zucchini,0
-coconut milk,0
-marinara sauce,0
+banana,1
+zucchini,1
+coconut milk,1
+marinara sauce,1
 parmesan cheese,0
 oil,0
 Cod,0
@@ -74,13 +74,13 @@ tomatoes,0
 White fish,0
 Beef,0
 Arborio rice,0
-cabbage,0
-quinoa,0
+cabbage,1
+quinoa,1
 sea salt,0
 Rice,0
 Pork tenderloin,0
 avocado,0
-cherry tomatoes,0
+cherry tomatoes,1
 Eggs,0
 vegetable broth,0
 parsley,0

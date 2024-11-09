@@ -1,5 +1,6 @@
 from ingredients import load_ingredients, display_ingredients, update_availability, save_ingredients
 from showConfigMenu import load_user_preferences, save_user_preferences, select_preferences, reset_preferences
+from displayFilterReipe import load_recipes, filter_recipes, display_filtered_recipes
 
 def main():
     filename = 'ingredients.csv'
@@ -63,10 +64,11 @@ def main():
             print('User selected to skip preferences. Loading full recipe list...\n')
 
 
+    # Load the recipes from 'recipeDataBase.csv' and filter them based on the user's preferences
+    recipes = load_recipes('recipeDataBase.csv')  # load from recipeDataBase.csv
+    filtered_recipes = filter_recipes(preferences, recipes)  #filter recipes based on user preferences
+    display_filtered_recipes(filtered_recipes)  # Display filtered recipes
 
-
-    #filter recipes
-    #display recipes
     #make weekly meal plan
     #pie chart
 
