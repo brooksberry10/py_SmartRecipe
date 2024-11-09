@@ -1,26 +1,81 @@
 {
     "dietary_preferences": {
         "restrictions/preferences": [
-            {"name": "vegetarian", "selected": 0},
-            {"name": "pescatarian", "selected": 0},
-            {"name": "gluten-free", "selected": 0},
-            {"name": "Low fat", "selected": 0},
-            {"name": "High protein", "selected": 0},
-            {"name": "Low carb", "selected": 0},
-            {"name": "Paleo", "selected": 0},
-            {"name": "balanced", "selected": 0},
-            {"name": "keto", "selected": 0},
-            {"name": "dairy free", "selected": 0},
-            {"name": "Heart Healthy", "selected": 0},
-            {"name": "IBD diet", "selected": 0},
-            {"name": "Include cheat day meals", "selected": 0}
+            {
+                "name": "vegetarian",
+                "selected": 1
+            },
+            {
+                "name": "pescatarian",
+                "selected": 0
+            },
+            {
+                "name": "gluten-free",
+                "selected": 1
+            },
+            {
+                "name": "Low fat",
+                "selected": 0
+            },
+            {
+                "name": "High protein",
+                "selected": 0
+            },
+            {
+                "name": "Low carb",
+                "selected": 0
+            },
+            {
+                "name": "Paleo",
+                "selected": 0
+            },
+            {
+                "name": "balanced",
+                "selected": 0
+            },
+            {
+                "name": "keto",
+                "selected": 0
+            },
+            {
+                "name": "dairy free",
+                "selected": 1
+            },
+            {
+                "name": "Heart Healthy",
+                "selected": 1
+            },
+            {
+                "name": "IBD diet",
+                "selected": 0
+            },
+            {
+                "name": "Include cheat day meals",
+                "selected": 0
+            }
         ]
     },
     "nutritional_goals": {
-        "daily_calorie_goals": [1500, 2000, 2500],
-        "protein_goals": [50, 100, 150],
-        "carb_goals": [150, 250, 300],
-        "fat_goals": [50, 70, 90],
+        "daily_calorie_goals": [
+            1500,
+            2000,
+            2500
+        ],
+        "protein_goals": [
+            50,
+            100,
+            150
+        ],
+        "carb_goals": [
+            150,
+            250,
+            300
+        ],
+        "fat_goals": [
+            50,
+            70,
+            90
+        ],
         "selected_goals": {
             "calories": 0,
             "protein": 0,
@@ -29,8 +84,16 @@
         }
     },
     "meal_calorie_range": {
-        "min_calories_options": [300, 400, 500],
-        "max_calories_options": [600, 700, 800],
+        "min_calories_options": [
+            300,
+            400,
+            500
+        ],
+        "max_calories_options": [
+            600,
+            700,
+            800
+        ],
         "selected_calories": {
             "min": 0,
             "max": 0
