@@ -3,7 +3,7 @@
         "restrictions/preferences": [
             {
                 "name": "vegetarian",
-                "selected": 1
+                "selected": 0
             },
             {
                 "name": "pescatarian",
@@ -39,11 +39,11 @@
             },
             {
                 "name": "dairy free",
-                "selected": 1
+                "selected": 0
             },
             {
                 "name": "Heart Healthy",
-                "selected": 1
+                "selected": 0
             },
             {
                 "name": "IBD diet",

@@ -3,12 +3,12 @@ banana,1
 zucchini,1
 coconut milk,1
 marinara sauce,1
-parmesan cheese,0
-oil,0
-Cod,0
-egg,0
-Pizza dough,0
-basil,0
+parmesan cheese,1
+oil,1
+Cod,1
+egg,1
+Pizza dough,1
+basil,1
 shrimp,0
 Almond butter,0
 carrots,0
@@ -76,13 +76,13 @@ Beef,0
 Arborio rice,0
 cabbage,1
 quinoa,1
-sea salt,0
-Rice,0
-Pork tenderloin,0
-avocado,0
+sea salt,1
+Rice,1
+Pork tenderloin,1
+avocado,1
 cherry tomatoes,1
 Eggs,0
-vegetable broth,0
-parsley,0
-mayonnaise,0
-Pasta,0
+vegetable broth,1
+parsley,1
+mayonnaise,1
+Pasta,1
