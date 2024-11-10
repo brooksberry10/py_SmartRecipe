@@ -1,7 +1,7 @@
 from ingredients import load_ingredients, display_ingredients, update_availability, save_ingredients
 from showConfigMenu import load_user_preferences, save_user_preferences, select_preferences, reset_preferences
 from displayFilterReipe import load_recipes, filter_recipes, display_filtered_recipes
-
+from resetIngredients import reset_ingredient_availability
 def main():
     filename = 'ingredients.csv'
     header, rows = load_ingredients(filename)
@@ -37,6 +37,16 @@ def main():
 
     # Save the updated ingredients back to the CSV file
     save_ingredients(filename, header, rows)
+
+    user_input = input("Do you want to reset your available ingredients (make none available)? (y/n): ")
+    if (user_input == 'y' or user_input == 'Y'):
+        reset_ingredient_availability(filename)
+        
+        # Reload the CSV data to refresh 'rows'
+        header, rows = load_ingredients(filename)
+        display_ingredients(rows)
+    
+
 
 
 
