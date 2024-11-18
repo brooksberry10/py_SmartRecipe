@@ -1,6 +1,6 @@
 from ingredients import load_ingredients, display_ingredients, update_availability, save_ingredients
 from showConfigMenu import load_user_preferences, save_user_preferences, select_preferences, reset_preferences
-from displayFilterReipe import load_recipes, filter_recipes, display_filtered_recipes, MakeWeeklyPlan, displayWeeklyPlan
+from displayFilterReipe import load_recipes, filter_recipes, display_filtered_recipes, MakeWeeklyPlan, displayWeeklyPlan, check_recipes_availability
 
 def main():
     filename = 'ingredients.csv'
@@ -69,11 +69,12 @@ def main():
     filtered_recipes = filter_recipes(preferences, recipes)  #filter recipes based on user preferences
     weekPlan = MakeWeeklyPlan(filtered_recipes)
     displayWeeklyPlan(weekPlan)  # Display meal plan
+    check_recipes_availability(weekPlan)
 
 
 
 
-# TO DO ####################chart####################################################################################
+# TO DO #################q###chart####################################################################################
     #menu for nutritional goals
     #make weekly meal plan, accounting for nutritional goals, and using only filtered recipes
     #shopping lsit based on recipes used in meal plan and ingredients in inventory

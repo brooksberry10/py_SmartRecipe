@@ -80,4 +80,36 @@ def displayWeeklyPlan(mealPlan):
 
     def makeShoppingList(mealPlan):
         for recipe in mealPlan:
-            for ingredient in recipe['ingre']
+            for ingredient in recipe['ingre']            for ingredient in recipe['ingre']
+def check_recipes_availability(recipes_list):
+    #here I am making a dictionary to store ingredient availability
+    ingredients_availability = {}
+    with open('ingredients.csv', 'r') as csvfile:
+        reader = csv.DictReader(csvfile)
+        for row in reader:
+            name = row['Ingredient Name'].strip().lower()
+            available = int(row['Available'])
+            ingredients_availability[name] = available
+
+    #Set to store ingredients that are not available
+    not_available_set = set()
+
+    #this processes each recipe
+    for recipe in recipes_list:
+        ingredients = recipe['Ingredients']
+
+        #putting the ingredients string into a list
+        ingredients_list = [ing.strip().lower() for ing in ingredients.split(',')]
+
+        #Check each ingredient
+        for ingredient in ingredients_list:
+            if ingredients_availability[ingredient] == 0:
+                not_available_set.add(ingredient)
+
+    #Print out the ingredients that are not available
+    if not_available_set:
+        print("This is your full Shopping List: ")
+        for ingredient in sorted(not_available_set):
+            print(f"{ingredient}")
+    else:
+        print("All ingredients are available.")
