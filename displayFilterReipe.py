@@ -80,7 +80,7 @@ def displayWeeklyPlan(mealPlan):
 
     def makeShoppingList(mealPlan):
         for recipe in mealPlan:
-            for ingredient in recipe['ingre']            for ingredient in recipe['ingre']
+            for ingredient in recipe['ingre']
 def check_recipes_availability(recipes_list):
     #here I am making a dictionary to store ingredient availability
     ingredients_availability = {}
