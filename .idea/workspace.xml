@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4c9ed1e9-db44-4339-8143-cc35b34b3d19" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/displayFilterReipe.py" beforeDir="false" afterPath="$PROJECT_DIR$/displayFilterReipe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ingredients.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ingredients.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/smart.py" beforeDir="false" afterPath="$PROJECT_DIR$/smart.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userConfigTemplate.json" beforeDir="false" afterPath="$PROJECT_DIR$/userConfigTemplate.json" afterDir="false" />
     </list>
@@ -50,7 +50,7 @@
     "Python.smart.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "bbranch",
+    "git-widget-placeholder": "main",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>

@@ -3,6 +3,7 @@ from showConfigMenu import load_user_preferences, save_user_preferences, select_
 from displayFilterReipe import load_recipes, filter_recipes, display_filtered_recipes, MakeWeeklyPlan, displayWeeklyPlan
 from resetIngredients import reset_ingredient_availability
 from resetJson import reset_preferences_to_zero
+from shoppingList import generate_shopping_list, display_shopping_list, save_shopping_list
 
 def main():
     filename = 'ingredients.csv'
@@ -72,7 +73,11 @@ def main():
     weekPlan = MakeWeeklyPlan(filtered_recipes)
     displayWeeklyPlan(weekPlan)  # Display meal plan
 
-
+    # Generate the shopping list
+    shopping_list = generate_shopping_list(weekPlan, 'ingredients.csv')
+    display_shopping_list(shopping_list)
+    # Optionally save the shopping list to a file
+    save_shopping_list(shopping_list)
 
 
 # TO DO ####################chart####################################################################################
