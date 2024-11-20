@@ -1,6 +1,7 @@
 from ingredients import load_ingredients, display_ingredients, update_availability, save_ingredients
 from showConfigMenu import load_user_preferences, save_user_preferences, select_preferences, reset_preferences
 from displayFilterReipe import load_recipes, filter_recipes, display_filtered_recipes, MakeWeeklyPlan, displayWeeklyPlan
+from resetIngredients import reset_ingredient_availability
 
 def main():
     filename = 'ingredients.csv'
@@ -9,7 +10,7 @@ def main():
     if rows is None:
         return  # Exit if the file wasn't loaded correctly
 
-    # Display the ingredients list initially
+    # Display the ingredients list initially1
     display_ingredients(rows)
 
     # Ask the user to input the ingredient number they have
@@ -80,6 +81,7 @@ def main():
     #pie chartchart
 
 
+    reset_ingredient_availability(filename)
 
 if __name__ == '__main__':
     main()
