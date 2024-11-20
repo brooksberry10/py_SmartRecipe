@@ -9,3 +9,5 @@ import time
 from newPiChart import load_csv, count_tags, plot_pie_chart
 from resetWeekly import reset_csv
 
+
+MUST INSTALL MATPLOTLIB TO RUN IT
