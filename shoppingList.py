@@ -59,4 +59,4 @@ def save_shopping_list(shopping_list, filename='shopping_list.txt'):
     with open(filename, 'w') as file:
         for item in sorted(shopping_list):
             file.write(f"{item}\n")
-    print(f"\nShopping list saved to {filename}.")
+    print(f"\nShopping list saved to {filename}.\n")

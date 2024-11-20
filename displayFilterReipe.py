@@ -61,23 +61,39 @@ def displayWeeklyPlan(mealPlan):
     if mealPlan:
         print("\nWeekly Plan:")
         count = 0
-        for recipe in mealPlan:
-            count+= 1
-            if count == 1:
-                 print("\nSunday's meals:\n")
-            elif count == 4:
-                print("\nMonday's meals:\n")
-            elif count == 7:
-                 print("\nTuesday's meals:\n")  
-            elif count == 10:
-                print("\nWednesday's meals:\n")
-            elif count == 13:
-                 print("\nThursday's meals:\n")    
-            elif count == 16:
-                print("\nFriday's meals:\n")
-            elif count == 19:
-                 print("\nSaturday's meals:\n")                 
-            print(f"- {recipe['Name']} (Calories: {recipe['Total Calories']}, Tags: {recipe['Dietary Tags']})")
-            print(f"        Ingredients: {recipe['Ingredients']}\n")
+        mealFile = 'mealPlan.txt'
+        with open(mealFile, 'w') as file:
+            file.write("Weekly Plan:\n\n")  # Add a header to the file
+
+            for recipe in mealPlan:
+                count += 1
+                if count == 1:
+                    day_header = "\nSunday's meals:\n"
+                elif count == 4:
+                    day_header = "\nMonday's meals:\n"
+                elif count == 7:
+                    day_header = "\nTuesday's meals:\n"
+                elif count == 10:
+                    day_header = "\nWednesday's meals:\n"
+                elif count == 13:
+                    day_header = "\nThursday's meals:\n"
+                elif count == 16:
+                    day_header = "\nFriday's meals:\n"
+                elif count == 19:
+                    day_header = "\nSaturday's meals:\n"
+                else:
+                    day_header = None
+
+                if day_header:
+                    print(day_header)
+                    file.write(day_header + "\n")  # Write day header to file
+
+                meal_info = (
+                    f"- {recipe['Name']} (Calories: {recipe['Total Calories']}, Tags: {recipe['Dietary Tags']})\n"
+                    f"        Ingredients: {recipe['Ingredients']}\n")
+                print(meal_info)
+                file.write(meal_info + "\n")  # Write meal info to file
+
+
     else:
         print("\nNo recipes found that match your preferences.")
