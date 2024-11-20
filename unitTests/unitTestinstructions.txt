@@ -1,0 +1,6 @@
+To test the unit test, you have to go to command line and input this command
+
+
+python3 smart.py < "unitTest_"
+
+with whatever unit test
