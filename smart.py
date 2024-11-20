@@ -100,5 +100,9 @@ def main():
     reset_ingredient_availability(filename)
     reset_preferences_to_zero("userConfigTemplate.json")
 
+
+
+    print("\nCHECK TXT FILES FOR SAVED MEAL PLAN & SHOPPING LIST! THANK YOU FOR USING OUR SMART MEAL PLAN GENERATOR!\n")
+
 if __name__ == '__main__':
     main()
