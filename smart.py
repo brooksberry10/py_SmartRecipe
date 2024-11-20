@@ -1,10 +1,14 @@
 from ingredients import load_ingredients, display_ingredients, update_availability, save_ingredients
 from showConfigMenu import load_user_preferences, save_user_preferences, select_preferences, reset_preferences
-from displayFilterReipe import load_recipes, filter_recipes, display_filtered_recipes, MakeWeeklyPlan, displayWeeklyPlan
+from displayFilterReipe import load_recipes, filter_recipes, display_filtered_recipes, MakeWeeklyPlan, displayWeeklyPlan, save_weekly_plan_to_csv
 from resetIngredients import reset_ingredient_availability
 from resetJson import reset_preferences_to_zero
 from shoppingList import generate_shopping_list, display_shopping_list, save_shopping_list
+
 import time
+from newPiChart import load_csv, count_tags, plot_pie_chart
+from resetWeekly import reset_csv
+
 
 def main():
     filename = 'ingredients.csv'
@@ -82,6 +86,17 @@ def main():
 
     weekPlan = MakeWeeklyPlan(filtered_recipes)
     displayWeeklyPlan(weekPlan)  # Display meal plan
+    save_weekly_plan_to_csv(weekPlan)
+
+    tags = load_csv('weekly_plan.csv')
+    if tags:  # Check if tags are loaded successfully
+        # Count frequency of each tag
+        tag_counts = count_tags(tags)
+        
+        # Plot the pie chart
+        plot_pie_chart(tag_counts)
+    else:
+        print("No data available to generate the pie chart.")
 
     # Generate the shopping list
     shopping_list = generate_shopping_list(weekPlan, 'ingredients.csv')
@@ -99,6 +114,7 @@ def main():
 
     reset_ingredient_availability(filename)
     reset_preferences_to_zero("userConfigTemplate.json")
+    reset_csv("weekly_plan.csv")
 
 
 
@@ -106,3 +122,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+
+    

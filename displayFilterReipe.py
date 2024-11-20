@@ -56,6 +56,27 @@ def MakeWeeklyPlan(filtered_recipes):
         print("\nNo recipes in file.")
     return mealPlan
 
+#THIS IS NEW
+def save_weekly_plan_to_csv(mealPlan, filename="weekly_plan.csv"):
+    """Save the weekly plan to a CSV file."""
+    if mealPlan:
+        with open(filename, mode='w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow(['Day', 'Recipe Name', 'Calories', 'Tags'])  # CSV header
+
+            days_of_week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+            meal_count = 0
+
+            for i, recipe in enumerate(mealPlan):
+                day = days_of_week[meal_count % 7]  # Loop through the days of the week
+                writer.writerow([day, recipe['Name'], recipe['Total Calories'], recipe['Dietary Tags']])
+                meal_count += 1
+
+        print(f"Weekly plan saved to '{filename}'")
+
+
+
+
 def displayWeeklyPlan(mealPlan):
     """Display the meal plan."""
     if mealPlan:
