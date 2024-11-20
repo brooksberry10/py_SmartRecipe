@@ -1,6 +1,6 @@
 from ingredients import load_ingredients, display_ingredients, update_availability, save_ingredients
 from showConfigMenu import load_user_preferences, save_user_preferences, select_preferences, reset_preferences
-from displayFilterReipe import load_recipes, filter_recipes, display_filtered_recipes
+from displayFilterReipe import load_recipes, filter_recipes, display_filtered_recipes, MakeWeeklyPlan, displayWeeklyPlan, check_recipes_availability
 from resetIngredients import reset_ingredient_availability
 def main():
     filename = 'ingredients.csv'
