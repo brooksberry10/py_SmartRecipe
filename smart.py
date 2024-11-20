@@ -1,7 +1,7 @@
 from ingredients import load_ingredients, display_ingredients, update_availability, save_ingredients
 from showConfigMenu import load_user_preferences, save_user_preferences, select_preferences, reset_preferences
-from displayFilterReipe import load_recipes, filter_recipes, display_filtered_recipes, MakeWeeklyPlan, displayWeeklyPlan, check_recipes_availability
-
+from displayFilterReipe import load_recipes, filter_recipes, display_filtered_recipes
+from resetIngredients import reset_ingredient_availability
 def main():
     filename = 'ingredients.csv'
     header, rows = load_ingredients(filename)
@@ -38,6 +38,16 @@ def main():
     # Save the updated ingredients back to the CSV file
     save_ingredients(filename, header, rows)
 
+    user_input = input("Do you want to reset your available ingredients (make none available)? (y/n): ")
+    if (user_input == 'y' or user_input == 'Y'):
+        reset_ingredient_availability(filename)
+        
+        # Reload the CSV data to refresh 'rows'
+        header, rows = load_ingredients(filename)
+        display_ingredients(rows)
+    
+
+
 
 
 
@@ -67,18 +77,16 @@ def main():
     # Load the recipes from 'recipeDataBase.csv' and filter them based on the user's preferences
     recipes = load_recipes('recipeDataBase.csv')  # load from recipeDataBase.csv
     filtered_recipes = filter_recipes(preferences, recipes)  #filter recipes based on user preferences
-    weekPlan = MakeWeeklyPlan(filtered_recipes)
-    displayWeeklyPlan(weekPlan)  # Display meal plan
-    check_recipes_availability(weekPlan)
+    display_filtered_recipes(filtered_recipes)  # Display filtered recipes
 
 
 
 
-# TO DO #################q###chart####################################################################################
+# TO DO #########################################################################################################
     #menu for nutritional goals
     #make weekly meal plan, accounting for nutritional goals, and using only filtered recipes
     #shopping lsit based on recipes used in meal plan and ingredients in inventory
-    #pie chartchart
+    #pie chart
 
 
 
