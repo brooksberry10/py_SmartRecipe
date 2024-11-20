@@ -77,7 +77,9 @@ def main():
     # Load the recipes from 'recipeDataBase.csv' and filter them based on the user's preferences
     recipes = load_recipes('recipeDataBase.csv')  # load from recipeDataBase.csv
     filtered_recipes = filter_recipes(preferences, recipes)  #filter recipes based on user preferences
-    display_filtered_recipes(filtered_recipes)  # Display filtered recipes
+    weekPlan = MakeWeeklyPlan(filtered_recipes)
+    displayWeeklyPlan(weekPlan)  # Display meal plan
+    check_recipes_availability(weekPlan)
 
 
 
