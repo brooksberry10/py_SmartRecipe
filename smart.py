@@ -4,6 +4,7 @@ from displayFilterReipe import load_recipes, filter_recipes, display_filtered_re
 from resetIngredients import reset_ingredient_availability
 from resetJson import reset_preferences_to_zero
 from shoppingList import generate_shopping_list, display_shopping_list, save_shopping_list
+import time
 
 def main():
     filename = 'ingredients.csv'
@@ -12,6 +13,9 @@ def main():
     if rows is None:
         return  # Exit if the file wasn't loaded correctly
 
+    print("\nLoading ingredients...")
+    time_control = 2
+    time.sleep(time_control)
     # Display the ingredients list initially1
     display_ingredients(rows)
 
@@ -43,8 +47,6 @@ def main():
 
 
 
-
-
     # user preference configuration
     json_file = 'userConfigTemplate.json'
     preferences = load_user_preferences(json_file)
@@ -52,6 +54,9 @@ def main():
         # Allow user to select preferences
         proceed_to_pref = input("\nWould you like to select dietary preferences? (selecting n will skip and display all recipes) (y/n):")
         if proceed_to_pref.lower() == 'y':
+            print("\nLoading user preferences...")
+            time.sleep(time_control)
+
             user_pref = select_preferences(preferences)
             # Save updated preferences after selection
             save_user_preferences(json_file, user_pref)
@@ -61,15 +66,20 @@ def main():
             #     reset_preferences(preferences)
             #     save_user_preferences(json_file, preferences)
             # else:
-            print('Saving selection...\n')
-            print('loading filtered recipe list...\n')
+            print('\nloading filtered recipe meal plan and shopping list...\n')
         else:
-            print('User selected to skip preferences. Loading full recipe list...\n')
+           # print('User selected to skip preferences. Loading full recipe list...\n')
+            print("\nYou selected n. Meal plan will generate from full recipe list.")
+            print("\nLoading meal plan and shopping list...\n")
 
-
+    time.sleep(time_control)
     # Load the recipes from 'recipeDataBase.csv' and filter them based on the user's preferences
     recipes = load_recipes('recipeDataBase.csv')  # load from recipeDataBase.csv
     filtered_recipes = filter_recipes(preferences, recipes)  #filter recipes based on user preferences
+
+    if not filtered_recipes:
+        filtered_recipes = recipes
+
     weekPlan = MakeWeeklyPlan(filtered_recipes)
     displayWeeklyPlan(weekPlan)  # Display meal plan
 

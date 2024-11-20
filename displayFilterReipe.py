@@ -23,6 +23,10 @@ def filter_recipes(preferences, recipes):
         if pref['selected'] == 1:
             selected_tags.append(pref['name'].lower())
 
+    if not selected_tags:
+        print("\nNo preference selected. Meal plan will generate from full recipe list.")
+        return recipes
+
     # Filter recipes based on selected tags
     filtered_recipes = []
     for recipe in recipes:
