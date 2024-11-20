@@ -2,6 +2,7 @@ from ingredients import load_ingredients, display_ingredients, update_availabili
 from showConfigMenu import load_user_preferences, save_user_preferences, select_preferences, reset_preferences
 from displayFilterReipe import load_recipes, filter_recipes, display_filtered_recipes, MakeWeeklyPlan, displayWeeklyPlan
 from resetIngredients import reset_ingredient_availability
+from resetJson import reset_preferences_to_zero
 
 def main():
     filename = 'ingredients.csv'
@@ -54,13 +55,13 @@ def main():
             # Save updated preferences after selection
             save_user_preferences(json_file, user_pref)
             # Ask if they want to reset their selections
-            reset_choice = input("Do you want to reset your dietary preferences? (y/n): ")
-            if reset_choice.lower() == 'y':
-                reset_preferences(preferences)
-                save_user_preferences(json_file, preferences)
-            else:
-                print('Saving selection...\n')
-                print('loading filtered recipe list...\n')
+            # reset_choice = input("Do you want to reset your dietary preferences? (y/n): ")
+            # if reset_choice.lower() == 'y':
+            #     reset_preferences(preferences)
+            #     save_user_preferences(json_file, preferences)
+            # else:
+            print('Saving selection...\n')
+            print('loading filtered recipe list...\n')
         else:
             print('User selected to skip preferences. Loading full recipe list...\n')
 
@@ -82,6 +83,7 @@ def main():
 
 
     reset_ingredient_availability(filename)
+    reset_preferences_to_zero("userConfigTemplate.json")
 
 if __name__ == '__main__':
     main()
